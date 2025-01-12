@@ -36,7 +36,7 @@ VALID_IDS_REGEX = '^(' + '|'.join(
 ) + ')'
 
 INVALID_TYPES = [
-    "Definition",
+    # "Definition",
     "Special",
     "Category",
     "Mathematician",
@@ -214,5 +214,5 @@ def restore(filename):
     return url_set
 
 
-print(restore("restore.txt"))
-# ParsePage("https://proofwiki.org/wiki/Chinese_Remainder_Theorem")
+# print(restore("restore.txt"))
+ParsePage("https://proofwiki.org/wiki/Chinese_Remainder_Theorem")
