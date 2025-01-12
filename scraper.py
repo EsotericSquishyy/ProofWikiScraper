@@ -204,4 +204,15 @@ def write_to_json(data, filename):
         # f.write('\n')
 
 
-ParsePage("https://proofwiki.org/wiki/Chinese_Remainder_Theorem")
+def restore(filename):
+    url_set = set()
+
+    with open(filename, 'r') as file:
+        for line in file:
+            url_set.add(line.strip())
+
+    return url_set
+
+
+print(restore("restore.txt"))
+# ParsePage("https://proofwiki.org/wiki/Chinese_Remainder_Theorem")
