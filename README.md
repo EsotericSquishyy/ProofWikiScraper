@@ -1,1 +1,1 @@
-# ProofWiki
+# ProofWikiScraper
